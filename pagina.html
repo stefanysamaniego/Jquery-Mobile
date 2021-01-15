@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JqueryMobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="f">
+            <h1>esto es una cabecera</h1>
+        </div>
+        <div data-role="content" data-theme="c">
+            <a href="#pagina2" data-role="button" data-theme="b">ir al Formulario</a>
+        </div>
+        <div data-role="footer">
+            <h2>esto es un pie de pagina</h2>
+        </div>
+
+    </div>
+    <div data-role="page" id="pagina2">
+        <div data-role="header" data-theme="c">
+            <h1>Formulario</h1>
+        </div>
+        <div data-role="main">
+            <div class="ui-field-contain">
+                <label for="full name">nombre：</label>
+                <input type="text" name="fullname" id="fullname">
+                <label for="bday">fecha：</label>
+                <input type="date" name="bday" id="bday">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="tu correo electronico">
+            </div>
+            <input type="submit" data-inline="true" value="enviar">
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
